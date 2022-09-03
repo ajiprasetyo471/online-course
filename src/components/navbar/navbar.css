@@ -96,4 +96,8 @@
   .navbar-links__button {
     order: 2;
   }
+
+  .navbar-links__like {
+    margin-right: 20px;
+  }
 }
