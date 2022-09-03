@@ -8,6 +8,7 @@
 body {
   background: var(--color-bg);
   font-family: var(--font-family-1);
+  overflow-x: hidden;
 }
 
 a {
@@ -27,6 +28,52 @@ a {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.section_header {
+  display: flex;
+  align-items: center;
+}
+
+.section_header img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.8rem;
+}
+
+.section_header h1 {
+  font-weight: 800;
+  font-size: 26px;
+  color: #1c1d20;
+  margin-right: 1.1rem;
+}
+
+.flash-end {
+  font-weight: 600;
+  font-size: 15px;
+  color: #5a5c60;
+  margin-right: 0.625rem;
+}
+
+.flash-time {
+  background: linear-gradient(225.66deg, #ffaa5d -30.42%, #f63c3c 91.94%);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14.31px;
+  color: #ffffff;
+  padding: 4px 9px;
+}
+
+.section_button {
+  padding: 0.6875rem 1.0625rem;
+  background: #ffffff;
+  border: 0.8px solid #c0c2c6;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12.5px;
+  text-align: center;
+  color: #333539;
+  cursor: pointer;
 }
 
 @-webkit-keyframes scale-up-center {

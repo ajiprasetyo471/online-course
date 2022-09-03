@@ -5,18 +5,15 @@ import {
   RiArrowLeftSLine,
   RiStarFill,
 } from 'react-icons/ri';
-import cardImg from '../../assets/card-image.png';
 
 const Cards = (props) => {
-  const cards = [1, 2, 3, 4, 5, 6, 7, 8];
-
   const slideLeft = () => {
-    var cards = document.getElementById('cards');
+    let cards = document.getElementsByClassName('cards');
     cards.scrollLeft = cards.scrollLeft - 500;
   };
 
   const slideRight = () => {
-    var cards = document.getElementById('cards');
+    let cards = document.getElementsByClassName('cards');
     cards.scrollLeft = cards.scrollLeft + 500;
   };
 
@@ -25,13 +22,18 @@ const Cards = (props) => {
       <div className="cards-icon left" onClick={slideLeft}>
         <RiArrowLeftSLine size={20} />
       </div>
-      <div id="cards">
-        {cards.map((card, index) => {
+      <div className="cards">
+        {props.cardItem.map((card, index) => {
           return (
-            <div className="card-slider">
-              <div className="card-slider_image">
-                <img src={cardImg} alt="" />
-              </div>
+            <div
+              className="card-slider"
+              key={index}
+              onClick={() => card.clickEvent()}
+            >
+              <div
+                className="card-slider_image"
+                style={{ backgroundImage: `url(${card.image})` }}
+              ></div>
               <div className="card-slider_content">
                 <p className="card-slider_title-1">Arkademi</p>
                 <p className="card-slider_title-2">

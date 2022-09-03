@@ -1,0 +1,35 @@
+.promo {
+  margin-top: 3rem;
+}
+
+.promo_container {
+  justify-content: space-between;
+  margin-top: 1rem;
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.promo_container::-webkit-scrollbar {
+  display: none;
+}
+
+.promo_content {
+  display: inline-block;
+  width: 389px;
+  height: 200px;
+  border-radius: 12px;
+  margin-right: 1.625rem;
+}
+
+.promo-1 {
+  background: #0977be;
+}
+
+.promo-2 {
+  background: #2ba0e7;
+}
+
+.promo-3 {
+  background: #22bb3e;
+}
